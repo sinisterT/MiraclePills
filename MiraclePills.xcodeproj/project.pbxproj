@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		13913DCE1F238A62007B9A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13913DCD1F238A62007B9A4D /* AppDelegate.swift */; };
 		13913DD01F238A62007B9A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13913DCF1F238A62007B9A4D /* ViewController.swift */; };
-		13913DD31F238A62007B9A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13913DD11F238A62007B9A4D /* Main.storyboard */; };
 		13913DD51F238A62007B9A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13913DD41F238A62007B9A4D /* Assets.xcassets */; };
 		13913DD81F238A62007B9A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13913DD61F238A62007B9A4D /* LaunchScreen.storyboard */; };
+		13D5D19E1F249D06004CD08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D5D19C1F249D06004CD08D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13913DCA1F238A62007B9A4D /* MiraclePills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiraclePills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13913DCD1F238A62007B9A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13913DCF1F238A62007B9A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		13913DD21F238A62007B9A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13913DD41F238A62007B9A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13913DD71F238A62007B9A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13913DD91F238A62007B9A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D5D19D1F249D06004CD08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 			children = (
 				13913DCD1F238A62007B9A4D /* AppDelegate.swift */,
 				13913DCF1F238A62007B9A4D /* ViewController.swift */,
-				13913DD11F238A62007B9A4D /* Main.storyboard */,
 				13913DD41F238A62007B9A4D /* Assets.xcassets */,
+				13D5D19C1F249D06004CD08D /* Main.storyboard */,
 				13913DD61F238A62007B9A4D /* LaunchScreen.storyboard */,
 				13913DD91F238A62007B9A4D /* Info.plist */,
 			);
@@ -124,9 +124,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D5D19E1F249D06004CD08D /* Main.storyboard in Resources */,
 				13913DD81F238A62007B9A4D /* LaunchScreen.storyboard in Resources */,
 				13913DD51F238A62007B9A4D /* Assets.xcassets in Resources */,
-				13913DD31F238A62007B9A4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,20 +145,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		13913DD11F238A62007B9A4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13913DD21F238A62007B9A4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		13913DD61F238A62007B9A4D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				13913DD71F238A62007B9A4D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		13D5D19C1F249D06004CD08D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13D5D19D1F249D06004CD08D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +304,7 @@
 				13913DDE1F238A62007B9A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

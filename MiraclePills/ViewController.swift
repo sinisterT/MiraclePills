@@ -12,6 +12,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var stateBtn: UIButton!
+    @IBOutlet weak var lblZip: UILabel!
+    @IBOutlet weak var txtZip: UITextField!
+    @IBOutlet weak var lblCountry: UILabel!
+    @IBOutlet weak var txtCountry: UITextField!
+    @IBOutlet weak var btnBuy: UIButton!
+    @IBOutlet weak var imgSuccess: UIImageView!
     
     let states = ["Alaska", "Arkansas", "Alabama", "California", "Maine", "New York"]
     
@@ -23,12 +29,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
     @IBAction func stateBtnPressed(_ sender: Any) {
         statePicker.isHidden = false
+        lblCountry.isHidden = true
+        txtCountry.isHidden = true
+        lblZip.isHidden = true
+        txtZip.isHidden = true
+        btnBuy.isHidden = true
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -46,8 +55,16 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         stateBtn.setTitle(states[row], for: UIControlState.normal)
         statePicker.isHidden = true
+        lblCountry.isHidden = false
+        txtCountry.isHidden = false
+        lblZip.isHidden = false
+        txtZip.isHidden = false
+        btnBuy.isHidden = false
     }
     
+    @IBAction func btnBuyPressed(_ sender: Any) {
+        imgSuccess.isHidden = false
+    }
     
 }
 
